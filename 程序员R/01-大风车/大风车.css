@@ -1,0 +1,30 @@
+/* 设置 body 元素的高度为视窗的高度 */
+body {
+    height: 100vh;
+    /* 将 body 元素设置为弹性容器 */
+    display: flex;
+    /* 在主轴上居中对齐 */
+    justify-content: center;
+    /* 在交叉轴上居中对齐 */
+    align-items: center;
+    /* body 元素的背景颜色 */
+    background-color: #e8e8e8;
+}
+
+/* 定义一个名为 'rotate' 的关键帧动画 */
+@keyframes rotate {
+    /* 定义动画的起始状态 */
+    from {
+        transform: rotate(0);
+    }
+    /* 定义动画的结束状态 */
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* 将 'rotate' 动画应用于所有的 img 元素 */
+img {
+    /* 使用 'rotate' 动画 */
+    animation: rotate 10s infinite linear;
+}
